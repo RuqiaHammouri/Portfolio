@@ -4,127 +4,148 @@
   text-decoration: none;
   list-style: none;
   font-family: emoji;
-  
 }
-
-/* body{
-  background-color: rgb(43, 5, 43);
-} */
-
+body {
+  background-color: #fcf3f5 !important;
+}
 .imageAndName {
- margin-top: 3%;
+  margin: 5% auto;
   display: flex;
   justify-content: space-around;
+  width: 80%;
+  text-align: left;
+  gap: 10%;
+}
+.information {
+  margin-top: 5%;
 }
 .imageAndName h3 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #142f43;
-  font-style: italic;
+  font-size: 25px;
+
+  color: black;
+  padding-bottom: 1%;
 }
-.imageAndName img{
+.imageAndName img {
   width: 300px;
   height: 500px;
   border-radius: 4px;
 }
-.information {
-  display: flex;
-  align-content:space-around;
-  flex-direction: column;
-  gap: 10%;
-  /* border: gray 1px solid; */
-  padding: 2%;
-  border-radius: 4px;
-}
+
 .ruqia {
- font-size:100%;
- margin-top: 2%;
- margin-bottom: 2%;
-justify-content: center;
- }
-h2{
-font-family: emoji;
-font-size: 40px;
-font-weight: bolder;
-font-style: italic;
-/* margin: 20px 0 0 20px; */
-white-space: nowrap;
-overflow: hidden;
-width: 100%;
-animation: animtext 4s steps(80, end); 
-transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
-color: #142f43;
+  font-size: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  justify-content: center;
+}
+h2 {
+  font-family: emoji;
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 5%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: animtext 4s steps(80, end);
+  transition: all cubic-bezier(0.1, 0.7, 1, 0.1);
+  color: black;
+  font-weight: bold;
+}
+@keyframes animtext {
+  from {
+    width: 0;
+    transition: all 2s ease-in-out;
+  }
+}
 
-}
-@keyframes animtext { 
-from {
-   width: 0;
-  transition: all 2s ease-in-out;
-} 
-}
-/******* contact me ******/
-.contactMe{
- margin: 10% auto;
- padding: 5%;
-  border:  1px solid;
+.contactMePage {
+  margin: 5% auto;
   display: flex;
+  align-content: space-between;
+  flex-direction: row;
   align-content: center;
-  flex-direction: column;
-  width: 50%;
-  box-shadow: 3px 3px 3px 3px #B91646;
-  border-radius: 4px;
-  font-size: 100px;
- background-color: #F9F3DF;
-  box-shadow: 5px 8px 3px gray,3px 10px 10px 8px black, 5px 15px 15px 8px #B91646;
-  
-
+  text-align: left;
+  align-content: center;
+  width: 80%;
 }
-.contactMe h4{
-  font-size: 20px;
-  padding: 10px;
-  
 
-}
-.contactMe a{
+.contactMePage a {
   text-decoration: none;
-  color: #B91646;
-
+  color: black;
 }
-
-/*******education page ******/
-.educationPage{
+.contactMePage a:hover{
+  text-decoration: none;
+  color: brown;
+}
+.contact {
+  width: 40%;
+  margin-left: 15%;
+}
+.contact2 {
+  width: 40%;
+  margin: 10% auto;
+}
+.contact2 h5{
+  color: black;
+  font-size: 25px;
+}
+.educationPage {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  margin: 30px auto;
-  gap: 200px;
- 
-}
-/* .educationCard{
-  justify-content: center;
-  align-content: center;
-  margin: auto;
-} */
-
-/*******skill  page ******/
-.skillPage{
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  margin: 5%;
- justify-content: space-evenly;
-  gap: 50px;
-
-}
-.projectPage{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: center;
   margin: 5% auto;
-  width: 50%;
-  gap:10%
+}
 
+.skillPage {
+  display: flex;
+  margin: 3% auto;
+  justify-content: space-evenly;
+}
+.projectPage {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 5%;
+  margin: 5% auto;
+  padding: 5% auto;
+}
+.projectPage2 {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 5%;
+  margin: 5% auto;
+  padding: 5% auto;
+}
 
- 
+.projectDiscribtions {
+  width: 30%;
+}
+.projectDiscribtions h2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.projectDiscribtions p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.slider {
+  width: 60%;
+}
+.pointer {
+  color: black;
+}
+.projectDiscribtions a{
+  color: black;
+  font-size: 18px;
+}
+.projectDiscribtions a:hover{
+  color: brown;
+  text-decoration: none;
 }
